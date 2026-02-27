@@ -36,6 +36,5 @@ public class PlusMinus01 {
         System.out.println("b : " + b); // 18
         System.out.println("c : " + c); // 31
 
-        // 추가
     }
 }
