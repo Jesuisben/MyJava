@@ -9,7 +9,7 @@ public class TotalExam01 {
         grade = ""; //학점 변수 임의 핟당
 
         int total = kor + eng + math; //총점
-        double average = (double)total / 3; //평균
+        double average = total / 3.0; //평균
 
         //총점별 학점 대입
         if(average>=90){
