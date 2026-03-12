@@ -1,5 +1,5 @@
     package ch05_inheritance.mybeverage;
-
+//
     public class InheTest04 {
         static void main(String[] args) {
             // 승급(UpCasting) : 낮은 등급의 클래스가 높은 등급의 클래스 타입으로 한시적 형태가 바뀌는 동작
