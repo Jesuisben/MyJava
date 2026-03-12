@@ -19,4 +19,13 @@ public class Americano extends Drink implements BadAmericano{
         String menuFeature = super.toString() + ", 샷 개수 : " + shotCount + "샷, 물의 양 : " + waterAmount + "ml";
         return menuFeature ;
     }
+
+    // 원재료의 품질 및 양 낮추기 위한 BadAmericano 인터페이스의 추상 메소드의 오버라이드 생성
+    @Override
+    public void lowQuality(int lowShot, double lowWater){
+        System.out.println("변동 사항 : 샷(" + this.shotCount + " -> " + lowShot +
+                "), 물의 양(" + this.waterAmount + " -> " + lowWater + ")\n");
+        this.shotCount = lowShot;
+        this.waterAmount = lowWater;
+    }
 }

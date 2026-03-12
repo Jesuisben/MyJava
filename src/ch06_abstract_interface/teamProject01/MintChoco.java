@@ -18,5 +18,14 @@ public class MintChoco extends Drink implements BadMintChoco{
         String menuFeature = super.toString() + ", 초코칩 양 : " + chocoAmount + "스푼, 민트 에센스 양 : " + mintAmount +"방울";
         return menuFeature ;
     }
-    
+
+    // 원재료의 품질 및 양 낮추기 위한 BadAmericano 인터페이스의 추상 메소드의 오버라이드 생성
+    @Override
+    public void lowQuality(int lowChoco, int lowMint){
+        System.out.println("변동 사항 : 초코칩 양(" + this.chocoAmount + " -> " + lowChoco +
+                "), 민트 에센스 양(" + this.mintAmount + " -> " + lowMint + ")\n");
+        this.chocoAmount = lowChoco;
+        this.mintAmount = lowMint;
+    }
+
 }

@@ -19,4 +19,12 @@ public class Yogurt extends Drink implements BadYogurt{
         return menuFeature ;
     }
 
+    @Override
+    public void lowQuality(String lowOrigin, String lowMilk){
+        System.out.println("변동 사항 : 요거트 원산지(" + this.yogurtOrigin + " -> " + lowOrigin +
+                "), 우유 품질(" + this.milkQuality + " -> " + lowMilk + ")\n");
+        this.yogurtOrigin = lowOrigin;
+        this.milkQuality = lowMilk;
+    }
+
 }
