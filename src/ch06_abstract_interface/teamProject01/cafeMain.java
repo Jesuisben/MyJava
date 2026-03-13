@@ -20,6 +20,8 @@ public class cafeMain {
                 new Yogurt("요거트", 6100, "그리스", "상")
         };
 
+
+
         // 향상 for 반복문, 배열요소 출력
         int i = 1;
         for (Drink item : Menu){
